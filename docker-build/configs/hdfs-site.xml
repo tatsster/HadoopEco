@@ -21,14 +21,14 @@
         <name>dfs.namenode.checkpoint.dir</name>
         <value>/home/hadoop/data/nameNodeSecondary</value>
     </property>
-	<!-- <property>
+	<property>
 		<name>dfs.namenode.http-address</name>
 		<value>nodemaster:50070</value>
 	</property>
     <property>
 		<name>dfs.namenode.secondary.http-address</name>
 		<value>nodemaster:50090</value>
-	</property> -->
+	</property>
     <property>
         <name>dfs.replication</name>
         <value>1</value>

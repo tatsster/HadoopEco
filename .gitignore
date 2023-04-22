@@ -1,0 +1,3 @@
+*.gz
+*.tgz
+docker-build/configs/id_rsa*

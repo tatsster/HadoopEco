@@ -73,7 +73,7 @@ if [[ $1 = "install" ]]; then
 
 	# 3 hadoop nodes
 	echo ">> Starting master and worker nodes ..."
-	docker run -d --network=bridge -p 8088:8088 -p 9870:9870 -p 8022:22 -p 8080:8080 -p 18080:18080 -p 19888:19888 --hostname nodemaster --name nodemaster -it t4tsster/hadoop_cluster:hive
+	docker run -d --network=bridge -p 8088:8088 -p 50070:50070 -p 8022:22 -p 8080:8080 -p 18080:18080 -p 19888:19888 --hostname nodemaster --name nodemaster -it t4tsster/hadoop_cluster:hive
 	docker run -d --network=bridge --hostname node2 --name node2 -it t4tsster/hadoop_cluster:spark
 	docker run -d --network=bridge --hostname node3 --name node3 -it t4tsster/hadoop_cluster:spark
 	nodemaster_ip=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' nodemaster)
