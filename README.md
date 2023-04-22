@@ -1,6 +1,7 @@
-# HadoopEco
-Docker compose for Hadoop, Hive, Spark, ...
+# dockers
 
-Currently not working, I will back to this project soon =)
+Dockerhub links : https://hub.docker.com/u/t4tsster
 
-In mean time, use this https://github.com/sciencepal/dockers
+Contents:
+
+Hadoop, Spark, Hive, Nifi, Hue, Sqoop, Flume, Zeppelin, Kafka in 1 docker system
